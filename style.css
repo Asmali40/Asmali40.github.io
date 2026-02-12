@@ -1,5 +1,5 @@
 body{
-    background-color: rgb(25, 6, 94);
+    background-color: black;
     margin: 0;
     padding: 0;
 }
@@ -69,11 +69,13 @@ header{
 }
 
 main{
+  padding: 0;
   background-color: rgb(3, 41, 77);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  padding: 20%;
+  display: flex;
+  padding: 20em;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
     
 }
 
@@ -83,6 +85,7 @@ main h1{
   margin-bottom: 0px;
   font-family: 'Poppins', sans-serif;
   font-weight: 700;
+
 }
 main h2{
   color: skyblue;
@@ -90,6 +93,33 @@ main h2{
   font-size: 1.5em;
   font-family: 'Poppins', sans-serif;
   font-weight: 700;
+  text-align: right;
+
+}
+
+
+.text-block {
+  flex: 1;
+}
+
+
+.hero {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.hero-left {
+  display: flex;
+  flex-direction: column;
+}
+
+.introduction {
+  margin-top: 30px;
+  color: white;
+  padding: 30px;
+  width: 400px;
+  font-family: 'Poppins', sans-serif;
 }
 
 
