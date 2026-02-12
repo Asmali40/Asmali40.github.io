@@ -62,6 +62,10 @@ header{
   .logo { font-size: 1.15rem; }
   .navbar a { font-size: 0.9rem; margin-left: 14px; }
   .navbarContainer { padding: 14px 5%; }
+  .hero {
+    flex-direction: column;      /* untereinander */
+    align-items: flex-start;     /* links ausgerichtet */
+  }
 }
 
 @media (max-width: 480px) {
