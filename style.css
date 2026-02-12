@@ -1,8 +1,11 @@
 body{
     background-color: rgb(25, 6, 94);
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+* {
+  box-sizing: border-box;
 }
 
 header{
@@ -10,27 +13,26 @@ header{
 }
 
 
-
 .navbar {
   position: fixed;
   top: 0;
+  left: 0;
   width: 100%;
-  background: transparent;
+  background: rgba(10, 25, 47, 0.4);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  z-index: 1000;
 }
+
 
 .navbarContainer {
   display: flex;
   justify-content: space-between;
-  background-color: rgba(10, 25, 47, 0.4);
-  backdrop-filter: blur(10px);
-  padding-left: 10%;
-  padding-right: 10%;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  top: 0;
-  left: 0;
-  right: 0;
+  align-items: center;
+  padding: 20px 10%;
+  background: transparent;
 }
+
 
 .logo{
     color: white;
@@ -50,29 +52,44 @@ header{
   color: gray;
 }
 
+@media (max-width: 992px) {
+  .logo { font-size: 1.3rem; }
+  .navbar a { font-size: 0.95rem; margin-left: 20px; }
+  .navbarContainer { padding: 16px 6%; }
+}
+
+@media (max-width: 768px) {
+  .logo { font-size: 1.15rem; }
+  .navbar a { font-size: 0.9rem; margin-left: 14px; }
+  .navbarContainer { padding: 14px 5%; }
+}
+
+@media (max-width: 480px) {
+  .navbar a { font-size: 0.85rem; margin-left: 10px; }
+}
 
 main{
-    background-color: rgb(3, 41, 77);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    padding: 20%;
+  background-color: rgb(3, 41, 77);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 20%;
     
 }
 
 main h1{
-    color: white;
-    font-size: 3.5em;
-    margin-bottom: 0px;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 700;
+  color: white;
+  font-size: 3.5em;
+  margin-bottom: 0px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
 }
 main h2{
-    color: skyblue;
-    margin-top: -10px;
-    font-size: 1.5em;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 700;
+  color: skyblue;
+  margin-top: -10px;
+  font-size: 1.5em;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
 }
 
 
