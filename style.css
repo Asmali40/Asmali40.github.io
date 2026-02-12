@@ -91,6 +91,7 @@ main h1{
   margin-bottom: 0px;
   font-family: 'Poppins', sans-serif;
   font-weight: 700;
+  text-align: right;
 
 }
 main h2{
@@ -125,6 +126,7 @@ main h2{
   color: white;
   padding: 30px;
   width: 400px;
+  max-width: 100%;
   font-family: 'Poppins', sans-serif;
 }
 
