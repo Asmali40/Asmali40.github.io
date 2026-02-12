@@ -64,6 +64,15 @@ header{
   .logo { font-size: 1.15rem; }
   .navbar a { font-size: 0.9rem; margin-left: 14px; }
   .navbarContainer { padding: 14px 5%; }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+  
   .hero {
     flex-direction: column;     
     align-items: flex-start; 
@@ -87,7 +96,7 @@ main{
 
 main h1{
   color: white;
-  font-size: 3.5em;
+  font-size: clamp(1.8rem, 6vw, 3.5rem);  
   margin-bottom: 0px;
   font-family: 'Poppins', sans-serif;
   font-weight: 700;
@@ -97,7 +106,7 @@ main h1{
 main h2{
   color: skyblue;
   margin-top: -10px;
-  font-size: 1.5em;
+  font-size: clamp(1rem, 4vw, 1.5rem);  
   font-family: 'Poppins', sans-serif;
   font-weight: 700;
   text-align: right;
