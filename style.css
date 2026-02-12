@@ -4,6 +4,7 @@ html, body{
     padding: 0;
     width: 100%;
     overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 
 * {
@@ -62,21 +63,28 @@ header, .navbar {
 }
 
 @media (max-width: 768px) {
+  .introduction{
+    width: 100%;
+    max-width: 100%;
+  }
   .logo { font-size: 1.15rem; }
   .navbar a { font-size: 0.9rem; margin-left: 14px; }
   .navbarContainer { padding: 14px 5%; }
 
   h1 {
-    font-size: 2rem;
+    max-width: 100%;
+
   }
 
   h1 {
-    font-size: 2rem;
+    max-width: 100%;
+
   }
 
   .hero {
     flex-direction: column;     
     align-items: flex-start; 
+    text-align: left;
   }
 }
 
@@ -85,7 +93,7 @@ header, .navbar {
 }
 
 main{
-  padding: 0;
+  padding: 0 6%;
   background-color: rgb(3, 41, 77);
   display: flex;
   padding: 20em;
@@ -102,8 +110,10 @@ main h1{
   font-family: 'Poppins', sans-serif;
   font-weight: 700;
   text-align: right;
-
+  overflow-wrap: break-word;
+  max-width: 100%;
 }
+
 main h2{
   color: skyblue;
   margin-top: -10px;
@@ -111,7 +121,8 @@ main h2{
   font-family: 'Poppins', sans-serif;
   font-weight: 700;
   text-align: right;
-
+  overflow-wrap: break-word;
+  max-width: 100%;
 }
 
 
@@ -124,11 +135,15 @@ main h2{
   display: flex;
   align-items: center;
   gap: 30px;
+  max-width: 100%;
+
 }
 
 .hero-left {
   display: flex;
   flex-direction: column;
+  max-width: 100%;
+
 }
 
 .introduction {
@@ -147,3 +162,7 @@ footer{
 
 }
 
+about{
+  background: yellow;
+  margin-bottom: 0px;
+}
